@@ -1,0 +1,236 @@
+
+<br />
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+	
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="robots" content="index, follow">
+	<link rel="shortcut icon" href="theme/Simplico/images/favicon.ico" type="image/x-icon" />
+	
+	<title>Technical - High Definition Seismic Corporation</title>
+	
+	<link rel="stylesheet" href="theme/Simplico/css/reset.css" />
+	<link rel="stylesheet" href="theme/Simplico/css/style.css@v=3.3.16.css" />
+	
+	<!--[if lt IE 9]>
+		<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]--> 
+
+	<link href="http://fonts.googleapis.com/css?family=Wire+One" rel="stylesheet" type="text/css">
+	
+	<link rel="canonical" href="index.php@id=technical-discussion.html" />
+
+<!-- Google Analytics plugin -->
+<!-- begin tracking code -->
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-8650433-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+<!-- end Google Analytics tracking code -->
+
+  <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/1.1-latest/MathJax.js?config=TeX-AMS_HTML"></script>
+	
+</head> 
+
+<body id="technical-discussion" >
+
+<div class="wrapper">
+	
+<header class="clearfix">
+
+	<div class="clearfix">
+		
+		<h1><a href="index.html" id="logo" >High Definition Seismic Corporation</a></h1>
+	
+		<div class="headerSocial">
+											</div>
+		
+	</div>
+		
+	<nav class="clearfix">
+		<ul>
+			<li class="index"><a href="index.html" title="HDVSP">Home</a></li>
+<li class="services-offered"><a href="index.php@id=services-offered.html" title="Services">Services</a></li>
+<li class="news"><a href="index.php@id=news.html" title="News">News</a></li>
+<li class="limitations-and-requirements"><a href="index.php@id=limitations-and-requirements.html" title="Requirements">Requirements</a></li>
+<li class="technical-discussion current active"><a href="index.php@id=technical-discussion.html" title="Technical">Technical</a></li>
+<li class="data-quality"><a href="index.php@id=data-quality.html" title="Data Quality">Data Quality</a></li>
+<li class="papers"><a href="index.php@id=papers.html" title="Published Papers">Papers</a></li>
+<li class="contact"><a href="index.php@id=contact.html" title="Contact">Contact</a></li>
+		</ul>
+	</nav>
+
+</header>	
+<div class="pageBaner"><!-- --></div>
+
+<p class="breadcrumbs" >
+	<a href="index.html">Home</a> &rarr;  Technical</p>
+		
+<section class="clearfix">
+	
+	<article>
+		<h1 class="pageTitle">Technical</h1>
+		<p>
+	<a name="spatial_aliasing"></a></p>
+<h4>
+	Spatial Aliasing</h4>
+<p>
+	To avoid spatial aliasing in the VSP data, the recommended depth increment \({D.I.}\) is defined as</p>
+<p>
+	$$D.I. = V_{min} / (2 \cdot F_{max} )$$</p>
+<p>
+	where \(V_{min}\) is the lowest velocity that will be encountered and \(F_{max}\) is the highest frequency. Using some typical values seen in the Athabasca oil sands region:</p>
+<table>
+	<tbody>
+		<tr>
+			<td>
+				<strong>P waves:</strong></td>
+			<td>
+				\(V_{min}^P = 1900 m/s\)</td>
+			<td>
+				\(F_{max}^P = 380 Hz\)</td>
+			<td>
+				\(D.I. = 2.5 m\)</td>
+		</tr>
+		<tr>
+			<td>
+				<strong>S waves:</strong></td>
+			<td>
+				\(V_{min}^S = 600 m/s\)</td>
+			<td>
+				\(F_{max}^S = 350 Hz\)</td>
+			<td>
+				\(D.I. = 0.86 m\)</td>
+		</tr>
+	</tbody>
+</table>
+<h4>
+	&nbsp;</h4>
+<h4>
+	VSPs</h4>
+<p>
+	VSP data has many benefits:</p>
+<ul>
+	<li>
+		Usually has twice the frequency content compared to surface seismic;</li>
+	<li>
+		Allows many geophysical attributes to be determined: velocities, multiples, Q, anisotropic parameters, etc.;</li>
+	<li>
+		Very good repeatability for time-lapse / 4D applications since there are fewer variables, both known and unknown, to be dealt with;</li>
+	<li>
+		Can provide a high resolution image all around the well, not just in one plane as with cross-well seismic.</li>
+</ul>
+<h4>
+	&nbsp;</h4>
+<h4>
+	A typical VSP</h4>
+<p>
+	Due to cost and equipment limitations, most VSPs are not recorded with an appropriate receiver interval, which results in spatial aliasing in the data. Also it may be that only a portion of the borehole can be populated with receivers at one time. Moving receivers and reshooting is necessary to improve spatial sampling and to get coverage over the full length of the borehole. Moving the array and reshooting takes time, costs money and reduces data quality - particularly for high resolution work. If moving receivers and reshooting using dynamite as the source, consider the variables that may interfere with the final quality of the data:</p>
+<ul>
+	<li>
+		The source points have to be at a different location and there may be a different offset or different ray paths;</li>
+	<li>
+		The hole depths may be different;</li>
+	<li>
+		The statics may be very different if the first shot was in muskeg and the second, just 1 or 2 metres away, was in clay.</li>
+</ul>
+<p>
+	Each and every variable has a negative effect on the data quality. The cumulative effect may leave you with two or more sparsely sampled data sets that can not be merged together.</p>
+<h4>
+	&nbsp;</h4>
+<h4>
+	HDVSP</h4>
+<p>
+	With HDVSP, there is no need to move the receivers and reshoot, as the sensors are deployed from top to bottom of the well at a suitable interval to avoid spatial aliasing. Currently 1m or&nbsp; 2m spatial sampling is offered, but different intervals can be arranged according to the client's needs.</p>
+<h4>
+	Simultaneous vertical and surface seismic</h4>
+<p>
+	Often VSPs are requested only after a problem has been found with the surface seismic data. By the time the VSP is acquired, a whole year may have passed. Numerous small variables will reduce the correlation between the two data sets. The frost thickness, water table, moisture content of the ground and snow depth all change with time.</p>
+<p>
+	If one of the main uses of VSP data is to calibrate surface seismic data, then it seems logical that it should be carried out at the same time, using the same source points.</p>
+<p>
+	<strong>Yet this rarely happens. Why?</strong></p>
+<ul>
+	<li>
+		Usually there aren’t enough sensors to go top to bottom of the well;</li>
+	<li>
+		The receiver interval is insufficient for proper spatial sampling without reshooting two or three times;</li>
+	<li>
+		Repeating shots for the benefit of the VSP slows down the surface seismic program which increases costs;</li>
+	<li>
+		To do it right is has been cost prohibitive – at least until now.</li>
+</ul>
+<p>
+	<strong>Benefits of VSPs acquired simultaneously with surface seismic</strong><strong>;</strong></p>
+<ul>
+	<li>
+		Both datasets have the same source statics</li>
+	<li>
+		Complementary seismic attributes measured from either data set can be used to improve the other;</li>
+	<li>
+		No Government Approval is required for the VSP if all the source points fall under the surface seismic approval;</li>
+	<li>
+		If using our HDVSP system, both data sets can be acquired on the same recorder, so there is no question about a difference in the zero time.</li>
+</ul>
+	</article>
+	
+	
+<aside >
+
+	<div class="sidebar">
+		<h2>HDVSP Features at a Glance</h2>
+<ul> 
+<li>3-component</li> 
+<li>MEMS sensors</li> 
+<li>1 or 2 metre sensor interval</li> 
+<li>100's of sensors per well</li> 
+<li>Up to 720m (current maximum)</li> 
+<li>1ms sample rate</li>
+<li>2D, 3D & 4D</li> 
+<li>Multi-well VSPs</li>
+</ul>
+<p>Standalone or <em>simultaneous</em> recording with surface seismic</p>
+<!-- <p><a href="/SomeSegyFile.sgy">Download a sample SEG-Y file</a></p> -->	</div>
+
+</aside>
+</section>				
+			<!-- page footer
+			<div class="footer">
+				<p>Published on <time datetime="2017-11-19" pubdate>November 19th, 2017</time></p>
+			</div> -->
+
+
+
+<!-- include the footer template -->
+
+<!-- site footer -->
+<footer class="clearfix" >
+		
+		<div class="left">
+			&copy; copyrights: <a href="index.html" >High Definition Seismic Corporation</a> | 
+			<!--
+			Design by <a target="_blank" href="http://mdesigns.pl">mkopala</a> |
+			-->			
+			<a href="http://get-simple.info/" target="_blank" >Powered by  GetSimple</a>		</div>
+		
+		<div class="right">
+														</div>
+		
+</footer>
+	 
+</div><!--wrapper-->	
+	 
+</body>
+</html>
